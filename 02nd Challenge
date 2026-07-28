@@ -1,7 +1,7 @@
+Create a user named mariyam on App Server 1 in Stratos Datacenter. 
+Set the expiry date to 2027-02-17, ensuring the user is created in lowercase as per standard protocol.
 [root@stapp01 ~]# history
     1  useradd mariyam
     2  useradd -h
     3  usermod -e 2027-02-17 mariyam
-    4  id mariyam
-    5  chage -l mariyam
-    6  history
+    4  chage -l mariyam
