@@ -3,16 +3,16 @@ ssh banner@stapp03          #-- ssh user@hostname on App Server 3
 sudo su -                   # root login to create user
 useradd james
     2  useradd james
-    3  usermod -s /usr/sbin/nologin james
+    3  usermod -s /usr/sbin/nologin james              # 1st option tried to add for user
     4  passwd james                       # set passwd for user
 --------------------------------------------
-thor@jump-host ~$ ssh james@stapp03
+thor@jump-host ~$ ssh james@stapp03              
 james@stapp03's password: 
-This account is currently not available.
-Connection to stapp03 closed.
+This account is currently not available.             # Not working 
+Connection to stapp03 closed. 
 --------------------------------------------
-vi /etc/ssh/sshd_config
+vi /etc/ssh/sshd_config                             # 02nd option modifing config file working added DenyUsers username
 systemctl restart sshd
 hor@jump-host ~$ ssh james@stapp03
 james@stapp03's password: 
-Permission denied, please try again.          #Expected Output
+Permission denied, please try again.          #Expected Output - No shell access for james helps in jenkins when no server access to user needed
