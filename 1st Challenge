@@ -1,0 +1,18 @@
+# Create a user named james with a non-interactive shell on App Server 3.
+ssh banner@stapp03          #-- ssh user@hostname on App Server 3
+sudo su -                   # root login to create user
+useradd james
+    2  useradd james
+    3  usermod -s /usr/sbin/nologin james
+    4  passwd james                       # set passwd for user
+--------------------------------------------
+thor@jump-host ~$ ssh james@stapp03
+james@stapp03's password: 
+This account is currently not available.
+Connection to stapp03 closed.
+--------------------------------------------
+vi /etc/ssh/sshd_config
+systemctl restart sshd
+hor@jump-host ~$ ssh james@stapp03
+james@stapp03's password: 
+Permission denied, please try again.          #Expected Output
