@@ -1,12 +1,8 @@
 # 100-Days-of-DevOps
-KodeKolud - Challenge
+**kodekloud - Challenge**
 
-**Nautilus**
-xFusionCorp
-123 Marvis Bay Syldavia
-
-Project Nautilus¶
-OVERVIEW¶
+**Project Nautilus¶**_
+OVERVIEW
 Project Nautilus is run by the Naval subdivision within xFusionCorp Industries. The Nautilus Application helps the Naval forces to make smart procurement decisions on manned and unmanned maritime systems while ensuring that operational requirements are met. It aims to provide best in class operational support, improve the safety and life extension of existing machines, and reduce cost of ownership.
 
 Current Repertoire¶
@@ -33,15 +29,18 @@ Storage Filer: A NAS (Network Attached Storage) filer is used to provide reliabl
 SFTP Server: SFTP, which stands for SSH File Transfer Protocol is used to transfer data amongst two remote systems.
 Backup Server: A staging backup system used for short term archival.
 Jump Server: The intermediary host or an SSH gateway to a remote network hosting the Nautilus application.
-Infrastructure Details¶
-**Server Name	IP	Hostname	User	Password	Purpose
-Application Server 1	Dynamic	stapp01	tony	Ir0nM@n	Hosts Nautilus Application 1
-Application Server 2	Dynamic	stapp02	steve	Am3ric@	Hosts Nautilus Application 2
-Application Server 3	Dynamic	stapp03	banner	BigGr33n	Hosts Nautilus Application 3
-LoadBalancer Server	Dynamic	stlb01	loki	Mischi3f	Distributes traffic for Nautilus HTTP
-Database Server	Dynamic	stdb01	peter	Sp!dy	Hosts Nautilus Database
-Storage Server	Dynamic	ststor01	natasha	Bl@kW	Stores data for Nautilus Servers
-Backup Server	Dynamic	stbkp01	clint	H@wk3y3	Manages backups for Nautilus Servers
-Mail Server	Dynamic	stmail01	groot	Gr00T123	Manages email services for Nautilus Servers
-Jump Host Server	Dynamic	jump-host	thor	mjolnir123	Provides secure access to Stork DC
-Jenkins Server	Dynamic	jenkins	jenkins	j@rv!s	Runs Jenkins for CI/CD pipeline**
+
+**Infrastructure Details**
+
+| Server Name          | IP      | Hostname  | User    | Password   | Purpose                                     |
+|----------------------|---------|-----------|---------|------------|---------------------------------------------|
+| Application Server 1 | Dynamic | stapp01   | tony    | Ir0nM@n    | Hosts Nautilus Application 1                |
+| Application Server 2 | Dynamic | stapp02   | steve   | Am3ric@    | Hosts Nautilus Application 2                |
+| Application Server 3 | Dynamic | stapp03   | banner  | BigGr33n   | Hosts Nautilus Application 3                |
+| LoadBalancer Server  | Dynamic | stlb01    | loki    | Mischi3f   | Distributes traffic for Nautilus HTTP       |
+| Database Server      | Dynamic | stdb01    | peter   | Sp!dy      | Hosts Nautilus Database                     |
+| Storage Server       | Dynamic | ststor01  | natasha | Bl@kW      | Stores data for Nautilus Servers            |
+| Backup Server        | Dynamic | stbkp01   | clint   | H@wk3y3    | Manages backups for Nautilus Servers        |
+| Mail Server          | Dynamic | stmail01  | groot   | Gr00T123   | Manages email services for Nautilus Servers |
+| Jump Host Server     | Dynamic | jump-host | thor    | mjolnir123 | Provides secure access to Stork DC          |
+| Jenkins Server       | Dynamic | jenkins   | jenkins | j@rv!s     | Runs Jenkins for CI/CD pipeline             |
