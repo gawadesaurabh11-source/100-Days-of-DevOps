@@ -1,0 +1,5 @@
+[root@stapp03 ~]# history
+    1  vi /etc/ssh/sshd_config
+    2  systemctl restard sshd
+    3  systemctl restart sshd
+    4  history
