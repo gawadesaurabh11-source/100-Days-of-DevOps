@@ -4,12 +4,11 @@
 
 
 Install cronie package on all Nautilus app servers and start crond service.
-
-
-
+sudo yum search cron
+sudo yum list --installed | grep cron
 
 # 1. Install the cronie package
-sudo yum install -y cronie
+sudo yum install -y cronie                  # -y to skip yes confirmation
 
 # 2. Start the crond daemon service
 sudo systemctl start crond.service
