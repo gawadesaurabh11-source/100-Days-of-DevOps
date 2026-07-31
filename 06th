@@ -1,0 +1,21 @@
+
+
+
+
+
+Install cronie package on all Nautilus app servers and start crond service.
+
+
+
+
+# 1. Install the cronie package
+sudo yum install -y cronie
+
+# 2. Start the crond daemon service
+sudo systemctl start crond.service
+
+# 3. Enable the service to start automatically during system boot
+sudo systemctl enable crond.service
+
+# 4. Verify that the service is running actively
+sudo systemctl status crond.service
